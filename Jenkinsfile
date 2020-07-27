@@ -24,7 +24,7 @@ pipeline {
     }
     post {
       always {
-           jiraSendBuildInfo site: 'cooldsachin.atlassian.net'
+           jiraSendBuildInfo branch: 'MYP-1', site: 'cooldsachin.atlassian.net'
        }
     }
 }
