@@ -21,5 +21,9 @@ pipeline {
                     sh 'mvn deploy'
                 }
             }
+       post {
+       always {
+           jiraSendBuildInfo site: '<sitename>.atlassian.net'
+       }
     }
 }
