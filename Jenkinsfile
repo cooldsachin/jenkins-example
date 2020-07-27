@@ -21,8 +21,9 @@ pipeline {
                     sh 'mvn deploy'
                 }
             }
-       post {
-       always {
+    }
+    post {
+      always {
            jiraSendBuildInfo site: 'cooldsachin.atlassian.net'
        }
     }
