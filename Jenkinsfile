@@ -23,7 +23,7 @@ pipeline {
             }
        post {
        always {
-           jiraSendBuildInfo site: '<sitename>.atlassian.net'
+           jiraSendBuildInfo site: 'cooldsachin.atlassian.net'
        }
     }
 }
